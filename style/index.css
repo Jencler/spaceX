@@ -22,7 +22,38 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+/* --------ASIDE------- */
+
+.aside{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 290px;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    z-index: -1000;
+    padding: 4px 30px 4px ;
+    opacity: 0;
+}
+.active{
+    opacity: 1;
+}
+.aside_content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-top: 80px;
+}
+/* --------------- */
+
+
+
 .content_logo{
     display: flex;
     width: 100%;
@@ -49,7 +80,16 @@ html{
     border: 0;
     background-color: transparent;
     gap: 5px;
+    z-index: 5000;
 }
+
+
+
+
+
+
+
+/* ------------ */
 .menu_div > div {
     background-color: #fff;
     height: 2px;
@@ -94,6 +134,7 @@ html{
 }
 .cohete .text{
     width: 90%;
+    max-width: 380PX;
     height: 100%;
     position: absolute;
     left: 24px;
@@ -122,3 +163,5 @@ html{
     font-size: 1.6;
     font-weight: 600;
 }
+
+
